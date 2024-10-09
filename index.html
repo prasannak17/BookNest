@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookNest</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar">
+        <h1>BookNest</h1>
+    </div>
+
+    <div class="container">
+        <div class="book-container">
+            <h2>The Catcher in the Rye</h2>
+            <h4>J.D.Salinger</h4>
+            <p>This novel follows Holden Caulfield, a disillusioned teenager, as he navigates the challenges of adolescence and alienation in post-WWII America. It’s a deeply introspective story about identity, loneliness, and the struggle to find meaning in a confusing world.</p>
+            <button onclick="deletebook(event)">Delete</button>
+        </div>
+        <div class="book-container">
+            <h2>The Great Gatsby</h2>
+            <h4>F.Scott Fitzgerald</h4>
+            <p>Set in the Roaring Twenties, this novel follows the mysterious millionaire Jay Gatsby and his obsession with Daisy Buchanan. It examines themes of wealth, love, and the American Dream, revealing the hollowness behind the glamorous facade of high society.</p>
+            <button onclick="deletebook(event)">Delete</button>
+        </div>
+    </div>
+
+    <div class="popup-overlay"></div>
+    <div class="popup-box">
+        <h2>Add Book</h2>
+        <form>
+            <input type="text" placeholder="Book Title" id="book-title-input">
+            <input type="text" placeholder="Book Author" id="book-author-input">
+            <textarea type="text" placeholder="Short Description" id="book-description-tag"></textarea>
+            <button id="add-book">ADD</button>
+            <button id="cancel-popup">CANCEL</button>
+        </form>
+    </div>
+    <button class="add-button" id="add-popup-button">+</button>
+
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
